@@ -1,0 +1,154 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.none {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(37, 37, 37);
+    color: white;
+    /* position: relative; */
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+header {
+    /* border-radius: 10px; */
+    display: flex;
+    min-height: 150px;
+    max-height: 200px;
+    /* border: 1px solid red; */
+    background: linear-gradient(rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.4)), 
+    url(/bgr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-container{
+    /* position: relative; */
+    display: flex;
+    margin:  4em 3.13em;
+    /* border: rgb(0, 0, 255) 1px solid; */
+    max-width: 400px;
+    max-height: 80px;
+}
+
+.my-watchlist-container {
+    margin-top: .1em;
+    margin-left: 5em;
+    justify-content: center;
+    display: flex;
+    /* border: red 1px solid; */
+}
+
+.my-watchlist-container img{
+    margin-right: -7em;
+    transform: scale(0.6);
+    filter: invert(100%) sepia(1%) saturate(4%) hue-rotate(1deg) brightness(104%) contrast(100%);
+    display: block;
+}
+
+header a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    /* border: rgb(238, 255, 2) 1px solid; */
+    transition: 100ms;
+    margin-left: 5.5em;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    margin-top: .36em;
+}
+
+header a:hover{
+    color: rgb(255, 115, 0);
+}
+
+header h1{
+    margin: 0;
+    white-space: nowrap;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    background-color: #121212;
+    min-height: 500px;
+    width: 500px;
+    /* border-radius: 10px; */
+    padding-top: 3em;
+}
+
+.main-placeholder{
+    margin-top: 12em;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+.main .main-placeholder-icon{
+    max-width: 150px;
+    max-height: 150px;
+    filter: invert(12%) sepia(0%) saturate(841%) hue-rotate(180deg) brightness(89%) contrast(91%);
+    transform: scale(2);
+}
+
+.main h1{
+    font-size: 1.8rem;
+    color: rgb(37, 37, 37);
+}
+
+.search-bar{
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 35px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.search-bar .input-container input{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    border: none;
+    padding: .5em .8em;
+    min-width: 300px;
+    background: #2E2E2F;
+}
+
+.search-bar button{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    border: none;
+    background-color: rgb(80, 80, 80);
+    padding: 0 1.5em;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.search-bar button:hover{
+    background: #2E2E2F;
+}
+
+hr{
+    width: 400px;
+    border-radius: 5px;
+    display: block;
+    margin: 1em 0;
+    border-color: #6c6c6c;
+}
